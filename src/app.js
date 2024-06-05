@@ -33,8 +33,7 @@ app.use((req, res, next) => {
 app.use("/feed", isAuth, feedRoutes);
 app.use("/auth", authRoutes);
 
-const uri =
-  "mongodb+srv://abrar:21bscs20@cluster0.jlmafxc.mongodb.net/postsapp?retryWrites=true&w=majority&appName=Cluster0";
+const uri = "YOUR URI";
 
 mongoose
   .connect(uri)
